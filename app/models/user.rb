@@ -6,4 +6,6 @@ validates :email, presence:true, legnth: { maximum:255 }
 validates :position, presence: true, length: { maximum:50 },
            format: { with: VALID_EMAIL_REGEX },
            uniqueness: { case_sensitive: false }
+has_secure_password
+validates :password , legnth: { minimum:6 }
 end
