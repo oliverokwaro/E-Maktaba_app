@@ -1,0 +1,25 @@
+<% provide(:title, "Edit User") %>
+<div class=row>
+<div class="medium-6 colums medium-offset-3">
+<h1>Update Your Details </h1>
+<%= form_for(@user) do |f| %>
+    <%= render 'shared/error_messages' %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :email %>
+<%= f.email_field :email %>
+
+<%= f.label :position %>
+<%= f.text_field :position%>
+
+<%= f.label :password %>
+<%= f.password_field :password%>
+
+<%= f.label :password_confirmation, "Confirmation" %>
+<%= f.password_field :password_confirmation %>
+
+<%= f.submit "Create Account" %>
+<% end %>
+</div>
+</div>
