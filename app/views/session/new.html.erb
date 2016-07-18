@@ -1,13 +1,16 @@
 <% provide(:title, "Log In") %>
+<div class= row>
+<div class= "medium-6 columns medium-offset-3">
 <h1> Log in </h1>
-
 <%= form_for(:session, url: login_path) do |f| %>
     
-    <% f.label :email %>
-    <% f.email_field :email %>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
 
-    <% f.label :password %>
-    <% f.password_field :password %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
 
-    <% f.submit "Log In" %>
+    <%= f.submit "Log In" %>
 <% end %>
+</div>
+</div>
