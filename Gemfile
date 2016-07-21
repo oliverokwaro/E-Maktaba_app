@@ -7,6 +7,7 @@ gem 'rails', '~> 5.0.0'
 gem 'bcrypt'
 gem 'foundation-rails'
 gem 'sqlite3'
+gem 'faker'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
