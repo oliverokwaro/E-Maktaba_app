@@ -1,10 +1,10 @@
 <% provide(:title, "Book") %>
 <div class= row>
 <div class= "medium-6 columns medium-offset-3">
-<h1> Add Books </h1>
-        <%= form_for @book do |f| %>
+<h1> Edit Books </h1>
+    <%= form_for @book do |f| %>
     
-    <%= f.label :title %>
+     <%= f.label :title %>
     <%= f.text_field :title %>
 
     <%= f.label :author %>
