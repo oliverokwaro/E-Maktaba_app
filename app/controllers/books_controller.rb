@@ -20,7 +20,7 @@ class BooksController < ApplicationController
  #showing all books
   def index
    @books = Book.all
- end
+  end
 
 
  def show
@@ -32,7 +32,7 @@ class BooksController < ApplicationController
  @book = Book.find(params[:id])
  end
 
-
+#Updates a book
  def update
  @book = Book.find(params[:id])
  if @book.update_attributes(book_params)
@@ -43,6 +43,7 @@ class BooksController < ApplicationController
  end
  end
 
+#Deletes a book
  def destroy
  @book = Book.find(params[:id])
  @book.destroy
