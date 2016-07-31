@@ -51,7 +51,7 @@ class BooksController < ApplicationController
  redirect_to books_url
  end
 
-
+#defined book params
 private
   def book_params
     params.require(:book).permit(:title, :author, :category, :isbn, :publisher)
