@@ -31,6 +31,7 @@ test "email should not be too long" do
   assert_not @user.valid?
 end
 
+#test if email is correct
 test "email validation should accept valid addresses" do
   valid_addresses = %w[user@example.com USER@foo.COM A_US-ER@foo.bar.org
   first.last@foo.jp alice+bob@baz.cn]
