@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, only: [:edit, :update]
   
+  #list al users
   def index 
   @users = User.all
   end
