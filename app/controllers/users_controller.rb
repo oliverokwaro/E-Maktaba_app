@@ -15,6 +15,7 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  #creates a new user
   def create
     @user = User.new(user_params)
     if @user.save
