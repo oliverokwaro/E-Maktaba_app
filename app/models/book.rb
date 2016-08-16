@@ -3,4 +3,6 @@ class Book < ApplicationRecord
   validates :author, presence: true
   validates :category, presence: true
   validates :isbn, presence: true
+
+  enum status: {available: 1, nonavailable: 0  }
 end
